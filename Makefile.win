@@ -1,0 +1,145 @@
+# Project: hospitalBookingSys
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o CTools.o CButton.o CData.o CEdit.o CLabel.o ctrlBase.o CUser.o windowBase.o CDoctor.o CPatient.o CLoginWin.o CRoleSelectWin.o CMainWin.o CRegistWin.o CTable.o CDoctorWin.o CAdminWin.o CPatientWin.o CManageUserWin.o CManageDoctorWin.o CManageDepartmentWin.o CPatientCenterWin.o CDoctorCenterWin.o CDoctorMedicalConsultationWin.o CPatientManageAppointmentWin.o CPatientStartBookingWin.o CComboBox.o CAppointment.o CDepartment.o CPatientUpdateInfo.o CPatientChangePwdWin.o CAddDoctorWin.o CStartAppointmentWin.o CAddorCannelAppointmentNotice.o CPatientTreatmentWin.o CEditDoctorWin.o CSimpleNotice.o CRecordingWin.o CPatientRecordWin.o
+LINKOBJ  = main.o CTools.o CButton.o CData.o CEdit.o CLabel.o ctrlBase.o CUser.o windowBase.o CDoctor.o CPatient.o CLoginWin.o CRoleSelectWin.o CMainWin.o CRegistWin.o CTable.o CDoctorWin.o CAdminWin.o CPatientWin.o CManageUserWin.o CManageDoctorWin.o CManageDepartmentWin.o CPatientCenterWin.o CDoctorCenterWin.o CDoctorMedicalConsultationWin.o CPatientManageAppointmentWin.o CPatientStartBookingWin.o CComboBox.o CAppointment.o CDepartment.o CPatientUpdateInfo.o CPatientChangePwdWin.o CAddDoctorWin.o CStartAppointmentWin.o CAddorCannelAppointmentNotice.o CPatientTreatmentWin.o CEditDoctorWin.o CSimpleNotice.o CRecordingWin.o CPatientRecordWin.o
+LIBS     = -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = hospitalBookingSys.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+CTools.o: CTools.cpp
+	$(CPP) -c CTools.cpp -o CTools.o $(CXXFLAGS)
+
+CButton.o: CButton.cpp
+	$(CPP) -c CButton.cpp -o CButton.o $(CXXFLAGS)
+
+CData.o: CData.cpp
+	$(CPP) -c CData.cpp -o CData.o $(CXXFLAGS)
+
+CEdit.o: CEdit.cpp
+	$(CPP) -c CEdit.cpp -o CEdit.o $(CXXFLAGS)
+
+CLabel.o: CLabel.cpp
+	$(CPP) -c CLabel.cpp -o CLabel.o $(CXXFLAGS)
+
+ctrlBase.o: ctrlBase.cpp
+	$(CPP) -c ctrlBase.cpp -o ctrlBase.o $(CXXFLAGS)
+
+CUser.o: CUser.cpp
+	$(CPP) -c CUser.cpp -o CUser.o $(CXXFLAGS)
+
+windowBase.o: windowBase.cpp
+	$(CPP) -c windowBase.cpp -o windowBase.o $(CXXFLAGS)
+
+CDoctor.o: CDoctor.cpp
+	$(CPP) -c CDoctor.cpp -o CDoctor.o $(CXXFLAGS)
+
+CPatient.o: CPatient.cpp
+	$(CPP) -c CPatient.cpp -o CPatient.o $(CXXFLAGS)
+
+CLoginWin.o: CLoginWin.cpp
+	$(CPP) -c CLoginWin.cpp -o CLoginWin.o $(CXXFLAGS)
+
+CRoleSelectWin.o: CRoleSelectWin.cpp
+	$(CPP) -c CRoleSelectWin.cpp -o CRoleSelectWin.o $(CXXFLAGS)
+
+CMainWin.o: CMainWin.cpp
+	$(CPP) -c CMainWin.cpp -o CMainWin.o $(CXXFLAGS)
+
+CRegistWin.o: CRegistWin.cpp
+	$(CPP) -c CRegistWin.cpp -o CRegistWin.o $(CXXFLAGS)
+
+CTable.o: CTable.cpp
+	$(CPP) -c CTable.cpp -o CTable.o $(CXXFLAGS)
+
+CDoctorWin.o: CDoctorWin.cpp
+	$(CPP) -c CDoctorWin.cpp -o CDoctorWin.o $(CXXFLAGS)
+
+CAdminWin.o: CAdminWin.cpp
+	$(CPP) -c CAdminWin.cpp -o CAdminWin.o $(CXXFLAGS)
+
+CPatientWin.o: CPatientWin.cpp
+	$(CPP) -c CPatientWin.cpp -o CPatientWin.o $(CXXFLAGS)
+
+CManageUserWin.o: CManageUserWin.cpp
+	$(CPP) -c CManageUserWin.cpp -o CManageUserWin.o $(CXXFLAGS)
+
+CManageDoctorWin.o: CManageDoctorWin.cpp
+	$(CPP) -c CManageDoctorWin.cpp -o CManageDoctorWin.o $(CXXFLAGS)
+
+CManageDepartmentWin.o: CManageDepartmentWin.cpp
+	$(CPP) -c CManageDepartmentWin.cpp -o CManageDepartmentWin.o $(CXXFLAGS)
+
+CPatientCenterWin.o: CPatientCenterWin.cpp
+	$(CPP) -c CPatientCenterWin.cpp -o CPatientCenterWin.o $(CXXFLAGS)
+
+CDoctorCenterWin.o: CDoctorCenterWin.cpp
+	$(CPP) -c CDoctorCenterWin.cpp -o CDoctorCenterWin.o $(CXXFLAGS)
+
+CDoctorMedicalConsultationWin.o: CDoctorMedicalConsultationWin.cpp
+	$(CPP) -c CDoctorMedicalConsultationWin.cpp -o CDoctorMedicalConsultationWin.o $(CXXFLAGS)
+
+CPatientManageAppointmentWin.o: CPatientManageAppointmentWin.cpp
+	$(CPP) -c CPatientManageAppointmentWin.cpp -o CPatientManageAppointmentWin.o $(CXXFLAGS)
+
+CPatientStartBookingWin.o: CPatientStartBookingWin.cpp
+	$(CPP) -c CPatientStartBookingWin.cpp -o CPatientStartBookingWin.o $(CXXFLAGS)
+
+CComboBox.o: CComboBox.cpp
+	$(CPP) -c CComboBox.cpp -o CComboBox.o $(CXXFLAGS)
+
+CAppointment.o: CAppointment.cpp
+	$(CPP) -c CAppointment.cpp -o CAppointment.o $(CXXFLAGS)
+
+CDepartment.o: CDepartment.cpp
+	$(CPP) -c CDepartment.cpp -o CDepartment.o $(CXXFLAGS)
+
+CPatientUpdateInfo.o: CPatientUpdateInfo.cpp
+	$(CPP) -c CPatientUpdateInfo.cpp -o CPatientUpdateInfo.o $(CXXFLAGS)
+
+CPatientChangePwdWin.o: CPatientChangePwdWin.cpp
+	$(CPP) -c CPatientChangePwdWin.cpp -o CPatientChangePwdWin.o $(CXXFLAGS)
+
+CAddDoctorWin.o: CAddDoctorWin.cpp
+	$(CPP) -c CAddDoctorWin.cpp -o CAddDoctorWin.o $(CXXFLAGS)
+
+CStartAppointmentWin.o: CStartAppointmentWin.cpp
+	$(CPP) -c CStartAppointmentWin.cpp -o CStartAppointmentWin.o $(CXXFLAGS)
+
+CAddorCannelAppointmentNotice.o: CAddorCannelAppointmentNotice.cpp
+	$(CPP) -c CAddorCannelAppointmentNotice.cpp -o CAddorCannelAppointmentNotice.o $(CXXFLAGS)
+
+CPatientTreatmentWin.o: CPatientTreatmentWin.cpp
+	$(CPP) -c CPatientTreatmentWin.cpp -o CPatientTreatmentWin.o $(CXXFLAGS)
+
+CEditDoctorWin.o: CEditDoctorWin.cpp
+	$(CPP) -c CEditDoctorWin.cpp -o CEditDoctorWin.o $(CXXFLAGS)
+
+CSimpleNotice.o: CSimpleNotice.cpp
+	$(CPP) -c CSimpleNotice.cpp -o CSimpleNotice.o $(CXXFLAGS)
+
+CRecordingWin.o: CRecordingWin.cpp
+	$(CPP) -c CRecordingWin.cpp -o CRecordingWin.o $(CXXFLAGS)
+
+CPatientRecordWin.o: CPatientRecordWin.cpp
+	$(CPP) -c CPatientRecordWin.cpp -o CPatientRecordWin.o $(CXXFLAGS)
